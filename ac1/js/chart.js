@@ -18,6 +18,14 @@ const chart_options = {
     scales: { 
     xAxes: [ { position: 'top'}, { position: 'bottom'} ] 
   },
+  legend: {
+    labels:{
+      filter: function(items) {
+        return items.text != i18next.t("output.chart.minimum");
+        // return items.datasetIndex != 2;
+      }
+    }
+  },
 };
 
 function update_chart(input_data, possibilities) {
