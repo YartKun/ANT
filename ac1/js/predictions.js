@@ -851,9 +851,9 @@ class Predictor {
       return;
     }
 
-    if (peak_start + 999 < 14) {
+    if (peak_start + 5 < 14) {
       probability *= this.generate_decreasing_random_price(
-          given_prices, predicted_prices, peak_start + 999, 14 - (peak_start + 999),
+          given_prices, predicted_prices, peak_start + 5, 14 - (peak_start + 5),
           0.4, 0.9, 0.03, 0.05);
       if (probability == 0) {
         return;
