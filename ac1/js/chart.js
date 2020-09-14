@@ -21,7 +21,6 @@ const chart_options = {
 };
 
 function update_chart(input_data, possibilities) {
-  alert(possibilities[0].prices);
   let ctx = $("#chart"),
   datasets = [{
       label: i18next.t("output.chart.input"),
