@@ -90,11 +90,11 @@ const initialize = function () {
   $("#permalink-btn").on("click", copyPermalink);
 
   $("#reset").on("click", function () {
-    if (window.confirm(i18next.t("prices.reset-warning"))) {
+    //if (window.confirm(i18next.t("prices.reset-warning"))) {
       sell_inputs.forEach(input => input.value = '');
       fillFields([], false, -1);
       update();
-    }
+    //}
   });
 
   console.log('finished initializing');
